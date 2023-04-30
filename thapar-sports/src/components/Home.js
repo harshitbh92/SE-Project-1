@@ -4,14 +4,14 @@ import photo_2 from '../photo_2.webp'
 import photo_5 from '../photo_5.webp'
 import coachi from "../img/coachi.jpg";
 import Badminton from "../img/badminton.jpg";
-import Football from "../img/Football.avif";
+import Football from "../img/Football1.png";
 import Tennis from "../img/Tennis.jpg";
 import Cricket from "../img/batball.jpg";
 
 export default function Home() {
   return (
  // Header 
-    <div>
+    <div style={{backgroundColor:"aliceblue"}}>
     <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
  <div className=" carousel-inner ">
    <div className="carousel-item active">
@@ -41,9 +41,9 @@ export default function Home() {
                 <div id="aboutus"><h1>About us</h1>
                 <p>Stay updated with the latest sports events and announcements, book your swimming entries, and issue sports equipment all in one place
                 </p>
-                <button className="btn btn-primary">Read More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
+                <a href="/about-us"><button className="btn btn-primary" >Read More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-</svg></button></div>
+</svg></button></a></div>
             </div>
 
 
@@ -54,7 +54,7 @@ export default function Home() {
     <div className="row">
         <div className="col-md-12">
             <div className="d-flex justify-content-between align-items-center breaking-news bg-white">
-                <div className="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-1 news"><span className="d-flex align-items-center">&nbsp;Thapar Sports News</span></div>
+                <div className="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-1 news"><span className="d-flex align-items-left">Thapar Sports News</span></div>
                 <marquee className="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> <a href="#">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </a> <span className="dot"></span> <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </a> <span className="dot"></span> <a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse </a>
                 </marquee>
             </div>
@@ -66,11 +66,11 @@ export default function Home() {
 <div className="container-fluid" id="Achievements">
        <section className="pt-5 pb-5">
     <div className="container-fluid">
-        <div className="row">
+        <div className="row text-center" >
             <div className="col-6">
                 <h3 className="mb-3">Achievements</h3>
             </div>
-            <div className="col-6 text-right">
+            <div className="col-6">
                 <a className="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
                     <i className="fa fa-arrow-left"></i>
                 </a>
@@ -333,16 +333,6 @@ export default function Home() {
     </div>
 
 
-    <div className='container-fluid text-right' id="coachbtn">
-                <button className='btn btn-primary'>
-                    More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-</svg>
-                </button>
-
-            </div>
-
-
 
     {/* Facilities */}
 
@@ -382,11 +372,11 @@ export default function Home() {
 </div>
 
 <div className='container-fluid text-right' id="sportbtn">
-                <button className='btn btn-primary'>
+               <a href="/facilities" ><button className='btn btn-primary'>
                     More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
 </svg>
-                </button>
+                </button></a>
 
             </div>
 

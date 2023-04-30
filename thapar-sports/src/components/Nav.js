@@ -2,6 +2,7 @@ import React from 'react';
 import "./CSS/style.css";
 import {Link} from 'react-router-dom'
 
+
 const Nav = () =>{
   return (
     <div>
@@ -20,15 +21,10 @@ const Nav = () =>{
         <Link className="nav-link" to="/about-us">About us</Link>
       </li>
 
-      <li className="nav-item dropdown">
-        <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Facilitics
+      <li className="nav-item">
+        <Link className="nav-link" to="/facilities">
+        Facilities
         </Link>
-        <ul className="dropdown-menu">
-          <li><Link className="dropdown-item" to="/">Cricket</Link></li>
-          <li><Link className="dropdown-item" to="/">Football</Link></li>
-          <li><Link className="dropdown-item" to="/">Basketball</Link></li>
-        </ul>
         </li>
         
         <li className="nav-item">
@@ -43,9 +39,14 @@ const Nav = () =>{
       <li className="nav-item">
         <Link className="nav-link" to="/events">Events</Link>
       </li>
-
       <li className="nav-item">
-        <Link className="nav-link" data-toggle="modal" data-target="#modalLoginForm"><i className="fa-solid fa-user"></i></Link>
+        <Link className="nav-link" to="/login"><i className="fa-solid fa-user"></i></Link>
+        {/* <Link className="nav-link" data-toggle="modal" data-target="#modalLoginForm"><i className="fa-solid fa-user"></i></Link> */}
+</li>
+        {/* <li className="nav-item">
+        <button onClick={() => app.auth().signOut()}>Sign out</button>
+      </li>  */}
+        {/* <Link className="nav-link" to="/login"><i className="fa-solid fa-user"></i></Link> */}
 
         {/* <div className="text-center">
 <Link to="" className="btn btn-default btn-rounded mb-4"  >Launch
@@ -55,7 +56,7 @@ const Nav = () =>{
 
         
 
-      </li>
+      
     </ul>
     
   </div>
@@ -74,23 +75,24 @@ aria-hidden="true">
       </button>
     </div>
     <div className="modal-body mx-3">
-      <div className="md-form mb-5">
-        <i className="fas fa-user prefix grey-text"></i>
-        <label data-error="wrong" data-success="right" for="defaultForm-number">Your Rollno</label>
-        <input placeholder="Enter Your Rollno" type="number" id="defaultForm-number" className="form-control validate"/>
-        
-      </div>
+    <div class="form-outline mb-4">
+              <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
+              <label class="form-label" for="typeEmailX-2">Email</label>
+            </div>
 
-      <div className="md-form mb-4">
-        <i className="fas fa-lock prefix grey-text"></i>
-        <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
-        <input placeholder="Enter Your Password" type="password" id="defaultForm-pass" className="form-control validate"/>
-        
-      </div>
+    <div class="form-outline mb-4">
+              <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+              <label class="form-label" for="typePasswordX-2">Password</label>
+    </div>
+
+    <div class="form-check d-flex justify-content-start mb-4">
+              <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+              <label class="form-check-label" for="form1Example3"> Remember password </label>
+    </div>
 
     </div>
     <div className="modal-footer d-flex justify-content-center">
-      <button className="btn btn-primary">Login</button>
+    <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
     </div>
   </div>
 </div>
