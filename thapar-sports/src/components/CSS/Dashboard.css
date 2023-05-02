@@ -185,6 +185,16 @@ a:link{
         left: 60px;
     }
 }
+#botal{
+    background: rgb(102, 0, 0);
+    box-shadow: none;
+    border: none
+}
+.botal:hover {
+    color: rgb(102, 0, 0);
+    cursor: pointer;
+    opacity: 0.7;
+}
 
 @media (max-width:880px) {
     /* .topbar {

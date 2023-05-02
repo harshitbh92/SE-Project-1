@@ -147,7 +147,7 @@ class dashboard extends React.Component {
                             <div class="card" id="card">
                                 <div class="card-content">
                                     <div class="number">1140</div>
-                                    <div class="card-name">Availible Now</div>
+                                    <div class="card-name">Available Now</div>
                                 </div>
                                 <br/>
                                 <div class="icon-box">
@@ -201,7 +201,7 @@ class dashboard extends React.Component {
             />
           </div>
           <div>
-            <button type="submit">Issue Equipment</button>
+            <button type="submit" id="botal">Issue Equipment</button>
           </div>
         </form>
       </div>
@@ -309,7 +309,7 @@ class dashboard extends React.Component {
                 </div>
                 <div class="row mt-3">
                     <div class="col-md-12 text-center">
-                        <button class="btn btn-primary profile-button" type="button">Submit</button>
+                        <button class="btn btn-primary profile-button" type="button" id="botal">Submit</button>
                     </div>
                 </div>
             </div>
@@ -344,22 +344,22 @@ class dashboard extends React.Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                            <tr>
                                     <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
+                                    <td>Cricket Bat</td>
+                                    <td>20</td>
 
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
+                                    <td>Badminton</td>
+                                    <td>25</td>
 
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
+                                    <td>Football</td>
+                                    <td>5</td>
 
                                 </tr>
                             </tbody>
@@ -414,27 +414,27 @@ class dashboard extends React.Component {
                                 <tr>
                                     <th scope="col">S, No.</th>
                                     <th scope="col">Item Name</th>
-                                    <th scope="col">Quantity Availible</th>
+                                    <th scope="col">Quantity Available</th>
 
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
+                                    <td>Cricket Bat</td>
+                                    <td>20</td>
 
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
+                                    <td>Badminton</td>
+                                    <td>25</td>
 
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
+                                    <td>Football</td>
+                                    <td>5</td>
 
                                 </tr>
                             </tbody>
